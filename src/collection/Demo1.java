@@ -40,8 +40,8 @@ public class Demo1 {
 
         Iterator it = collection.iterator();
         while(it.hasNext()){
-            String s = (String) it.next(); //object强转String
-            System.out.println(s);
+//            String s = (String) it.next(); //object强转String
+            System.out.println(it.next());
 //            collection.remove(s); //注意删除元素不用上面的方法，不允许并发修改
 //            it.remove();//使用迭代器自身的remove
         }

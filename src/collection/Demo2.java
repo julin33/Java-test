@@ -32,14 +32,14 @@ public class Demo2 {
         //增强for
         System.out.println("============增强for=============");
         for (Object object :collection) {
-            System.out.println(object.toString());
+            System.out.println(object);
         }
         //迭代器
         System.out.println("============迭代器=============");
 
         Iterator it = collection.iterator();
         while (it.hasNext()){
-            System.out.println(it.next().toString());
+            System.out.println(it.next());
         }
 
         //4、判断
