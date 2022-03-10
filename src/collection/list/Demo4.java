@@ -17,7 +17,7 @@ public class Demo4 {
         System.out.println(list.toString());
         //删除操作
 //        list.remove(0);
-//        list.remove("20");//这样写会出现异常，因为括号里是index
+//        list.remove(20);//这样写会出现异常，因为括号里是index
 //        强制转换Object或者Integer
 //        list.remove((Object) 20);
 //        list.remove((Integer) 20);

@@ -14,11 +14,19 @@ public class TestGeneric {
         integerMyGeneric.show(999);
         int num = integerMyGeneric.getT();
 
+        //泛型接口
         MyInterfaceImpl Impl = new MyInterfaceImpl(); //写实现类的时候就确定类型
         Impl.server("你妈嗨");
 
         MyInterfaceImpl2<Integer> Impl2 = new MyInterfaceImpl2<Integer>(); //使用的时候再声明类型
         Impl2.server(6666);
+
+        //泛型方法
+        MyGenericMethod myGenericMethod = new MyGenericMethod();
+        myGenericMethod.show("绝了");
+        myGenericMethod.show(100);
+        myGenericMethod.show(3.14);
+
 
     }
 
