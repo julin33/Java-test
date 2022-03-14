@@ -36,6 +36,8 @@ public class Demo1 {
             System.out.println(entry.getKey() + "------" + entry.getValue());
 //            System.out.println(entry);
         }
-
+        //判断
+        System.out.println(map.containsKey("cn"));
+        System.out.println(map.containsValue("美国"));
     }
 }
