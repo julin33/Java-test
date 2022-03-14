@@ -19,6 +19,10 @@ public class Copy {
         while ((count = fis.read(buf)) != -1){
             fos.write(buf,0,count);
         }
+        //3 关闭
+        fis.close();
+        fos.close();
+        System.out.println("执行完毕");
 
     }
 }
