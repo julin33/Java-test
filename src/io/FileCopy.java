@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 /**
  * 使用文件字节流进行复制
  */
-public class Copy {
+public class FileCopy {
     public static void main(String[] args) throws Exception{
         //1 创建流
         //1.1 文件字节输入流
