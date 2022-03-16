@@ -1,4 +1,4 @@
-package io;
+package io.filestream;
 
 import java.io.FileInputStream;
 
@@ -6,10 +6,10 @@ import java.io.FileInputStream;
  * FileInputStream的使用
  * 文件字节输入流
  */
-public class Input {
+public class FIleInput {
     public static void main(String[] args) throws Exception {
         //1、创建FileInputStrException路径
-        FileInputStream fis = new FileInputStream("D:/aaa.txt");
+        FileInputStream fis = new FileInputStream("D:\\lx\\hello.txt");
         //2、读取文件
         //2.1 单个字节读取
 //        int data = 0;

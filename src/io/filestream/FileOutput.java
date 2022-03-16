@@ -1,4 +1,4 @@
-package io;
+package io.filestream;
 
 import java.io.FileOutputStream;
 
@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
  * FileOutputStream
  * 文件字节输出流
  */
-public class Output {
+public class FileOutput {
     public static void main(String[] args) throws Exception{
         FileOutputStream fos = new FileOutputStream("d:\\bbb.txt",true);
         //写入文件
