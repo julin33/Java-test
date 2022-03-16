@@ -1,4 +1,4 @@
-package io;
+package io.charstream;
 
 import java.io.FileReader;
 import java.io.FileWriter;

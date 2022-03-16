@@ -1,4 +1,4 @@
-package io;
+package io.filestream;
 
 import java.io.FileOutputStream;
 
