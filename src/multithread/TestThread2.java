@@ -31,6 +31,7 @@ public class TestThread2 implements Runnable{
         TestThread2 t2 = new TestThread2("https://wx2.sinaimg.cn/mw690/008ro9Eqgy1h0cuw6zp7pj30u0190teu.jpg","2.jpg");
         TestThread2 t3 = new TestThread2("https://wx4.sinaimg.cn/mw690/83f470acly1h0cpj9q467j20p00e4778.jpg","3.jpg");
 
+        //建立代理
         new Thread(t1).start();
         new Thread(t2).start();
         new Thread(t3).start();
