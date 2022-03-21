@@ -5,7 +5,7 @@ package multithread;
  *
  *
  */
-public class TestThread3 implements Runnable{
+public class TestThread3 implements Runnable {
     @Override
     public void run() {
         //run方法线程体
@@ -29,3 +29,23 @@ public class TestThread3 implements Runnable{
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -54,5 +54,6 @@ class WeddingCompany implements Marry {
     private void after() {
         System.out.println("结婚之后收尾款");
     }
+
 }
 
