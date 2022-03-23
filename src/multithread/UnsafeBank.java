@@ -46,29 +46,32 @@ class Drawing extends Thread {
     }
 
     //取钱
+    //synchronized默认锁的是this，但实际要锁的是account
     @Override
     public void run() {
-        //判断有没有钱
-        if (account.money - drawingMoney < 0) {
-            System.out.println(Thread.currentThread().getName() + "取不了钱");
-            return;
+
+        synchronized (account) {
+            //判断有没有钱
+            if (account.money - drawingMoney < 0) {
+                System.out.println(Thread.currentThread().getName() + "取不了钱");
+                return;
+            }
+            //延时放大问题
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            //卡里的余额 = 余额 - 你取的钱
+            account.money = account.money - drawingMoney;
+            //你手里的钱
+            nowMoney = nowMoney + drawingMoney;
+
+            System.out.println(account.name + "余额为" + account.money);
+            //this.getName()等价于Thread.currentThread().getName()
+            System.out.println(this.getName() + "手里的钱：" + nowMoney);
         }
-        //延时放大问题
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        //卡里的余额 = 余额 - 你取的钱
-        account.money = account.money - drawingMoney;
-        //你手里的钱
-        nowMoney = nowMoney + drawingMoney;
-
-        System.out.println(account.name + "余额为" + account.money);
-        //this.getName()等价于Thread.currentThread().getName()
-        System.out.println(this.getName() + "手里的钱：" + nowMoney);
-
 
     }
 }
