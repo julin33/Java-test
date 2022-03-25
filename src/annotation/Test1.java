@@ -2,10 +2,6 @@ package annotation;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * 内置注解
- */
 public class Test1 extends Object{
     //@Override 重写的注解
     @Override
