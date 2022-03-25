@@ -22,7 +22,7 @@ public class Demo {
             }
         }
         long end = System.currentTimeMillis();
-        System.out.println("用时：" + (end - start));
+        System.out.println("用时：" + (end - start) + "ms");
 
         //3. System.gc() 见finalize
 

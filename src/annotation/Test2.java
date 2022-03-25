@@ -13,7 +13,7 @@ public class Test2 {
 //Target 表示我们的注解可以用在哪些地方
 @Target(value = {ElementType.METHOD, ElementType.TYPE})
 
-//Retention 表示我们的注解在什么地方还有效
+//Retention 表示我们的注解在什么地方有效
 // runtime > class >sources
 @Retention(value = RetentionPolicy.RUNTIME)
 
